@@ -454,7 +454,7 @@ section {
   left: 0;
   width: 100%;
   height: 120%;
-  background: url("/placeholder.svg?height=800&width=1200") center / cover fixed;
+  background: url("https://www.youtube.com/watch?v=wD-g_Gyn2I4") center / cover fixed;
   z-index: 1;
 }
 
@@ -972,4 +972,41 @@ footer {
     background-attachment: scroll; /* solución para que no falle el parallax */
     height: 100%; /* se ajusta mejor al contenido real */
   }
+}
+.tabs-section {
+  background: var(--white);
+  padding: 5rem 0;
+}
+
+.tabs-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-dark);
+}
+
+.tab-button.active {
+  background: var(--accent-color);
+  color: var(--white);
+}
+
+.tab-content {
+  display: none;
+  animation: fadeInUp 0.6s ease;
+}
+
+.tab-content.active {
+  display: block;
 }

@@ -271,3 +271,20 @@ document.addEventListener("DOMContentLoaded", () => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 });
+// Tabs functionality
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Quitar clase activa de todos los botones
+    tabButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // Mostrar solo el tab correspondiente
+    const target = btn.getAttribute("data-tab");
+    tabContents.forEach((content) => {
+      content.classList.toggle("active", content.id === target);
+    });
+  });
+});

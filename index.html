@@ -32,6 +32,7 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#productos">Productos</a></li>
+                <li><a href="#tabs">informacion</a></li>
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#video">Video</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -132,6 +133,30 @@
             </div>
         </div>
     </section>
+    <!--bloque de tabs -->
+<section id="tabs" class="tabs-section">
+  <div class="container">
+    <h2 class="section-title fade-in">Información General</h2>
+
+    <div class="tabs-buttons">
+      <button class="tab-button active" data-tab="tab1">Sobre Nosotros</button>
+      <button class="tab-button" data-tab="tab2">Ingredientes</button>
+      <button class="tab-button" data-tab="tab3">Precios</button>
+    </div>
+
+    <div class="tabs-content">
+      <div class="tab-content active" id="tab1">
+        <p>Somos una pastelería artesanal con más de 10 años de experiencia...</p>
+      </div>
+      <div class="tab-content" id="tab2">
+        <p>Utilizamos ingredientes 100% naturales: mantequilla, cacao puro, frutas frescas...</p>
+      </div>
+      <div class="tab-content" id="tab3">
+        <p>Pasteles desde $350 MXN. Personalizados a partir de $500 MXN. Contáctanos para cotizar.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Galería -->
 <section id="galeria" class="gallery">
@@ -197,8 +222,6 @@
   </div>
 </section>
 
-
-
     <!-- Video Section con Parallax -->
     <section id="video" class="video-section">
         <div class="parallax-bg"></div>
@@ -206,7 +229,7 @@
             <h2 class="section-title">El Arte de la Repostería</h2>
             <p>Descubre el proceso detrás de nuestras creaciones</p>
             <div class="video-container">
-                <video controls poster="/placeholder.svg?height=450&width=800&text=Video+Poster">
+                <video controls poster="video/video.mp4">
                     <source src="video/video.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento video.
                 </video>
