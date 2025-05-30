@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce Encanto - Los mejores postres artesanales</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">Dulce Encanto</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section con Slider -->
+    <section id="inicio" class="hero">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('img/slide1.jpg')"></div>
+            <div class="slide" style="background-image: url('img/slide2.jpg')"></div>
+            <div class="slide" style="background-image: url('img/slide3.jpg')"></div>
+        </div>
+        
+        <div class="slider-controls prev">
+            <button onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        </div>
+        <div class="slider-controls next">
+            <button onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="hero-content">
+            <h1>Bienvenidos a Dulce Encanto</h1>
+            <p>Creamos momentos dulces con los mejores pasteles artesanales, hechos con amor y los ingredientes más frescos</p>
+            <a href="#productos" class="cta-button">Ver Nuestros Productos</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestra Historia</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>En <strong>Dulce Encanto</strong>, cada pastel cuenta una historia. Desde 2015, nos hemos dedicado a crear experiencias dulces únicas que endulzan los momentos más especiales de nuestros clientes.</p>
+                    <p>Nuestro equipo de reposteros artesanales combina técnicas tradicionales con innovación moderna, utilizando solo los ingredientes más frescos y de la más alta calidad.</p>
+                    <p>Creemos que cada celebración merece un toque especial, y por eso ponemos nuestro corazón en cada creación que sale de nuestro horno.</p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="img/chef-pastelero.jpg" alt="Interior de nuestra pastelería">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestras Especialidades</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="img/chocolate.jpg" alt="Pastel de Chocolate">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pastel de Chocolate</h3>
+                        <p>Delicioso pastel de chocolate con ganache y fresas frescas</p>
+                        <div class="product-price">$450</div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="img/cheecake-fresa.png" alt="Cheesecake de Fresa">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cheesecake de Fresa</h3>
+                        <p>Cremoso cheesecake con base de galleta y fresas naturales</p>
+                        <div class="product-price">$380</div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="img/tres-leches.jpg" alt="Tres Leches">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tres Leches</h3>
+                        <p>Tradicional pastel tres leches con canela y merengue</p>
+                        <div class="product-price">$320</div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="img/cupcakes.jpg" alt="Cupcakes">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cupcakes Variados</h3>
+                        <p>Deliciosos cupcakes en diferentes sabores y decoraciones</p>
+                        <div class="product-price">$45 c/u</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+<section id="galeria" class="gallery">
+  <div class="container">
+    <h2 class="section-title fade-in">Galería de Creaciones</h2>
+    <div class="gallery-grid">
+
+      <div class="gallery-item fade-in">
+        <a href="img/pastel-boda.jpg" data-fancybox="gallery" data-caption="Pastel de Boda">
+          <img src="img/pastel-boda.jpg" alt="Pastel de Boda">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-item fade-in">
+        <a href="img/Cumpleaños.png" data-fancybox="gallery" data-caption="Pastel de Cumpleaños">
+          <img src="img/Cumpleaños.png" alt="Pastel de Cumpleaños">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-item fade-in">
+        <a href="img/macarrones.jpg" data-fancybox="gallery" data-caption="Macarons">
+          <img src="img/macarrones.jpg" alt="Macarons">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-item fade-in">
+        <a href="img/frutas.jpg" data-fancybox="gallery" data-caption="Tartas de Frutas">
+          <img src="img/frutas.jpg" alt="Tartas de Frutas">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-item fade-in">
+        <a href="img/postres-especiales.jpg" data-fancybox="gallery" data-caption="Postres Especiales">
+          <img src="img/postres-especiales.jpg" alt="Postres Especiales">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-item fade-in">
+        <a href="img/decoracion.jpg" data-fancybox="gallery" data-caption="Decoraciones">
+          <img src="img/decoracion.jpg" alt="Decoraciones">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Video Section con Parallax -->
+    <section id="video" class="video-section">
+        <div class="parallax-bg"></div>
+        <div class="video-content fade-in">
+            <h2 class="section-title">El Arte de la Repostería</h2>
+            <p>Descubre el proceso detrás de nuestras creaciones</p>
+            <div class="video-container">
+                <video controls poster="/placeholder.svg?height=450&width=800&text=Video+Poster">
+                    <source src="video/video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel de Promociones -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Promociones Especiales</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <h3>Oferta del Mes</h3>
+                        <p>20% de descuento en pasteles de cumpleaños</p>
+                        <i class="fas fa-birthday-cake" style="font-size: 3rem; color: var(--accent-color); margin: 1rem 0;"></i>
+                    </div>
+                    <div class="carousel-slide">
+                        <h3>Paquete Familiar</h3>
+                        <p>Lleva 3 pasteles y paga solo 2</p>
+                        <i class="fas fa-users" style="font-size: 3rem; color: var(--accent-color); margin: 1rem 0;"></i>
+                    </div>
+                    <div class="carousel-slide">
+                        <h3>Eventos Especiales</h3>
+                        <p>Descuentos especiales para bodas y quinceañeras</p>
+                        <i class="fas fa-heart" style="font-size: 3rem; color: var(--accent-color); margin: 1rem 0;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn" onclick="prevCarousel()"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn" onclick="nextCarousel()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Acordeón -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title fade-in">Preguntas Frecuentes</h2>
+            <div class="accordion">
+                <div class="accordion-item fade-in">
+                    <div class="accordion-header">
+                        <h3>¿Hacen pasteles personalizados?</h3>
+                        <i class="fas fa-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Sí, nos especializamos en pasteles personalizados para todo tipo de eventos. Solo necesitamos que nos contactes con al menos 48 horas de anticipación para poder crear el diseño perfecto para tu celebración.</p>
+                    </div>
+                </div>
+                <div class="accordion-item fade-in">
+                    <div class="accordion-header">
+                        <h3>¿Qué ingredientes utilizan?</h3>
+                        <i class="fas fa-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Utilizamos únicamente ingredientes frescos y de la más alta calidad. Nuestros huevos son de granja, la mantequilla es premium y todos nuestros saborizantes son naturales. También ofrecemos opciones sin gluten y veganas.</p>
+                    </div>
+                </div>
+                <div class="accordion-item fade-in">
+                    <div class="accordion-header">
+                        <h3>¿Hacen entregas a domicilio?</h3>
+                        <i class="fas fa-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Sí, ofrecemos servicio de entrega a domicilio en toda la ciudad. El costo de envío varía según la distancia. Para pedidos mayores a $500, el envío es gratuito.</p>
+                    </div>
+                </div>
+                <div class="accordion-item fade-in">
+                    <div class="accordion-header">
+                        <h3>¿Cuál es el tiempo de anticipación para pedidos?</h3>
+                        <i class="fas fa-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Para pasteles estándar recomendamos 24 horas de anticipación. Para diseños personalizados o eventos especiales, necesitamos al menos 48-72 horas para garantizar la mejor calidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Dirección</strong><br>
+                            Av. Dulces Sueños 123, Centro<br>
+                            Ciudad de México, CP 06000
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Teléfono</strong><br>
+                            +52 55 1234 5678
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            info@dulceencanto.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Horarios</strong><br>
+                            Lun - Sáb: 8:00 AM - 8:00 PM<br>
+                            Dom: 9:00 AM - 6:00 PM
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message">Por favor ingresa tu nombre</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message">Por favor ingresa un email válido</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <div class="error-message">Por favor ingresa el asunto</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="error-message">Por favor ingresa tu mensaje</div>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dulce Encanto</h3>
+                    <p>Creando momentos dulces desde 2015. Somos tu pastelería de confianza para todas las ocasiones especiales.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Productos</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#">Pasteles de Cumpleaños</a></li>
+                        <li><a href="#">Pasteles de Boda</a></li>
+                        <li><a href="#">Cupcakes</a></li>
+                        <li><a href="#">Cheesecakes</a></li>
+                        <li><a href="#">Postres Especiales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Dulces Sueños 123, Centro</p>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@dulceencanto.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dulce Encanto. Todos los derechos reservados. | Paseme profee ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Scroll to Top -->
+    <div class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Modal -->
+    <div id="promoModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h2 style="font-family: var(--font-title); color: var(--accent-color); margin-bottom: 1rem;">¡Oferta Especial!</h2>
+            <p>🎂 ¡Obtén 15% de descuento en tu primer pedido! 🎂</p>
+            <p>Usa el código: <strong>DULCE15</strong></p>
+            <button class="cta-button" onclick="closeModal()" style="margin-top: 1rem;">¡Quiero mi descuento!</button>
+        </div>
+    </div>
+
+    <!-- JavaScript personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>
